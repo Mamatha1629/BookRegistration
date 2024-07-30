@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="ISO-8859-1">
+      <title>Book Registration</title>
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <style>
+         body { background-color: #001f3f; color: white; }
+         .card { background-color: #003366; border: none; border-radius: 10px; padding: 20px; margin-top: 50px; }
+         .bg-danger { 
+            background-color: #0074D9 !important; 
+            border: 1px solid white; 
+            border-radius: 10px; 
+            padding: 20px; /* Increase padding for larger heading box */
+            font-size: 2.5rem; /* Increase font size for larger text */
+            margin-bottom: 20px; /* Add margin for spacing */
+         }
+         .btn-custom { 
+            background-color: #0074D9; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            padding: 12px 24px; 
+            cursor: pointer; 
+            margin: 5px; 
+            font-size: 16px; 
+         }
+         .btn-custom:hover { background-color: #005bb5; }
+         a { color: white; text-decoration: none; }
+         a:hover { text-decoration: underline; }
+         table { 
+            border: 1px solid white; 
+            width: 100%; 
+            color: white; 
+            border-radius: 10px; 
+            overflow: hidden; 
+            border-collapse: separate;
+            border-spacing: 0;
+            font-size: 18px; /* Increase font size */
+         }
+         th, td { 
+            border: 1px solid white; /* Maintain thin border */
+            padding: 15px; /* Increase padding */
+         }
+         th { color: white; }
+         input[type="text"] { 
+            background-color: #0074D9; 
+            color: white; 
+            border: 1px solid white; 
+            border-radius: 5px; 
+            padding: 10px; /* Increase padding */
+            width: 100%; 
+            font-size: 16px; /* Increase font size */
+         }
+      </style>
+   </head>
+   <body class="container-fluid">
+      <div class="card" style="width:50rem; margin: auto;"> <!-- Increased width of the card -->
+         <h2 class="bg-danger text-white text-center">Book Registration</h2>
+         <form action="register" method="post">
+            <table class="table table-hover">
+               <tr>
+                  <th>Book Name</th>
+                  <td><input type="text" name="bookName" class="form-control"></td>
+               </tr>
+               <tr>
+                  <th>Book Edition</th>
+                  <td><input type="text" name="bookEdition" class="form-control"></td>
+               </tr>
+               <tr>
+                  <th>Book Price</th>
+                  <td><input type="text" name="bookPrice" class="form-control"></td>
+               </tr>
+               <tr>
+                  <td colspan="2" class="text-center">
+                     <input type="submit" value="Register" class="btn btn-custom">
+                     <input type="reset" value="Cancel" class="btn btn-custom">
+                     <a href='bookList' class="btn btn-custom">Book List</a>
+                  </td>
+               </tr>
+            </table>
+         </form>
+      </div>
+   </body>
+</html>
